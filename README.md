@@ -3,4 +3,4 @@
 バージョンアップ時に動かなくなったり拡張機能の導入もあるため導入は自己責任です。
 
 # リンク
-
+[インストールマニュアル](https://kouta-wolf.github.io/cocofolia_css_man/)
