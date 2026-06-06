@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylebot インストール &amp; CSS適用ガイド</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<html>
+
+<div class="cover">
+  <div class="cover-label">ルームメンバー向け使用ガイド</div>
+  <h1>Stylebot インストール &amp;<br>ツールチップCSS適用ガイド</h1>
+  <div class="cover-sub">Chrome拡張機能「Stylebot」を使って、キャラクターチップの吹き出し幅を変える方法</div>
+</div>
+
+<body class="main">
+
+  <div class="toc">
+    <div class="toc-title">目次</div>
+    <ol>
+      <li>このCSSで何が変わるか</li>
+      <li>Stylebotをインストールする</li>
+      <li>CSSを適用する（手順）</li>
+      <li>CSSの中身の説明</li>
+      <li>幅の数字を変えたい場合</li>
+      <li>うまくいかないときは</li>
+    </ol>
+  </div>
+
+  <h2>1. このCSSで何が変わるか</h2>
+  <div class="card">
+    <p>このCSSを適用すると、<strong>キャラクターのコマにカーソルを乗せたときの吹き出し（ツールチップ）の横幅</strong>が変わるようになる。</p>
+    <p>デフォルトだと幅が狭くてテキストが細切れに折り返されるけど、このCSSで最大500pxまで広げられる。個人的にはこのくらいが見やすいと思うけど、数字の調整もできる。</p>
+  </div>
+  <div class="tip-box">
+    <strong>💡 CSSってなに？</strong>
+    Webページの見た目（色・大きさ・レイアウト）を変えるための設定ファイルのこと。プログラムじゃないから怖くないです。数字を書き換えるだけで見栄えが変わるからいい感じ。
+  </div>
+
+  <h2>2. Stylebotをインストールする</h2>
+  <p>Stylebotは <strong>Chrome拡張機能</strong>（ブラウザに追加するやつ）。Chromeウェブストアからインストールできる。chrome関係のブラウザだったら多分インストールできる</p>
+
+  <div class="card">
+    <ul class="step-list">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Chromeウェブストアを開く</div>
+          <div class="step-desc">下のボタンからStylebotのページに飛べるよ。</div>
+          <a class="btn-link" href="https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=ja&pli=1" target="_blank">→ Stylebotをインストールする</a>
+          <img class="step-img" src="img/1.png" alt="ChromeウェブストアのStylebotページ">
+        </div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">「Chromeに追加」を押す</div>
+          <div class="step-desc">右上の青いボタンを押すとインストールできる。確認ダイアログが出たら「拡張機能を追加」を選んでOK。</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tip-box">
+    <strong>🔧 インストール後、拡張機能のオプション画面を開くには</strong>
+    右上（右下？）のパズルピースアイコン（拡張機能）→ Stylebotの歯車マーク から開ける。それかChromeのアドレスバーに <code>chrome://extensions/</code> と入力 → Stylebotの「詳細」または「オプション」をクリック、拡張機能自体の詳細になるなら項目の中に拡張機能のオプションがまたあったりするかも？
+  </div>
+
+  <h2>3. CSSを適用する（手順）</h2>
+
+  <div class="card">
+    <ul class="step-list">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">cocfoliaのルームを開いた状態でStylebotのオプションを開く</div>
+          <div class="step-desc">拡張機能のオプション画面で「スタイル」タブを選択して、「新しいスタイルを追加…」ボタンを押す。</div>
+          <img class="step-img" src="img/2.png" alt="Stylebotのスタイル管理画面">
+        </div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">URLとCSSを入力する</div>
+          <div class="step-desc">URLの欄に <code>https://ccfolia.com/</code> と入力。下の大きいテキスト欄に、CSSをコピペする。</div>
+          <img class="step-img" src="img/3.png" alt="Stylebotのcss表示">
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
